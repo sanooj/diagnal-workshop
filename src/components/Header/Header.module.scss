@@ -1,0 +1,30 @@
+@use "src/assets/styles/helpers/mixins";
+.header {
+  display: grid;
+  grid-template-columns: 20px auto 25px;
+  column-gap: 14px;
+  position: sticky;
+  align-items: center;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  padding-block: 20px 25px;
+  background: var(--header-bg);
+  &.searchMode {
+    grid-template-columns: 20px auto 170px;
+  }
+}
+h1 {
+  @include mixins.font-size(20);
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.searchButton {
+  background: transparent;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+}

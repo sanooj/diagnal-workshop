@@ -1,0 +1,47 @@
+@use "src/assets/styles/helpers/mixins";
+
+.galleryItem {
+  display: inline-flex;
+  flex-direction: column;
+  row-gap: 10px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: var(--aspect-ratio);
+  }
+
+  figcaption {
+    @include mixins.font-size(14);
+    min-height: 41px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.loader {
+  height: 18px;
+  display: flex;
+  &::after {
+    width: 100%;
+    height: 100%;
+    animation: wave 1s infinite alternate;
+    background-color: var(--loader-color);
+    content: "";
+  }
+}
+
+@keyframes wave {
+  0% {
+    opacity: 0.3;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

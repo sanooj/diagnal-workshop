@@ -1,0 +1,7 @@
+@use "helpers/mixins";
+@use "helpers/variables";
+@use "helpers/reset";
+
+body {
+  @include mixins.body-styles;
+}

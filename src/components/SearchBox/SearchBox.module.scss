@@ -1,0 +1,23 @@
+@use "src/assets/styles/helpers/mixins";
+.searchInput {
+  display: grid;
+  grid-template-columns: 135px 20px;
+  column-gap: 5px;
+  border: 1px solid var(--input-border-color);
+  padding: 4px 8px 4px 4px;
+  input {
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    @include mixins.font-size(16);
+    height: 20px;
+    color: var(--text-color);
+  }
+}
+
+.searchButton {
+  background: transparent;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+}
