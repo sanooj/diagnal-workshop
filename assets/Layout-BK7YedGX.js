@@ -1,0 +1,2 @@
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/Header-DedxwGBg.js","assets/index-DnC7slUz.js","assets/index-DJTCzCB8.css","assets/Header-Ctkr_oNc.css"])))=>i.map(i=>d[i]);
+import{r as s,_ as a,j as t,O as o}from"./index-DnC7slUz.js";const e="_layout_vt50f_1",r={layout:e},l=s.lazy(()=>a(()=>import("./Header-DedxwGBg.js"),__vite__mapDeps([0,1,2,3]))),u=()=>t.jsxs("div",{className:r.layout,children:[t.jsx(l,{}),t.jsx(o,{})]});export{u as default};
